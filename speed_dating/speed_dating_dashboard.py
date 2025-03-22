@@ -7,10 +7,9 @@ import matplotlib.pyplot as plt
 # Set page configuration
 st.set_page_config(page_title="Speed Dating Data Explorer", layout="wide")
 
-@st.cache
+@st.cache_data
 def load_data():
-    # Adjust the path as needed if the CSV is in a different location.
-    df = pd.read_csv("Speed Dating Data.csv", encoding='ISO-8859-1')
+    df = pd.read_csv("Speed Dating Data.csv")
     return df
 
 # Load the dataset
