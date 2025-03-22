@@ -9,7 +9,7 @@ st.set_page_config(page_title="Speed Dating Data Explorer", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Speed Dating Data.csv")
+    df = pd.read_csv("SpeedDatingData.csv")
     return df
 
 # Load the dataset
